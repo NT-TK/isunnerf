@@ -1,0 +1,20 @@
+# Gradle / ビルド成果物
+.gradle/
+build/
+out/
+run/
+run-data/
+*.log
+
+# 依存jar(Iron's Spells本体など)はライセンス上、再配布できないのでコミットしない
+libs/*.jar
+libs/*.zip
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+bin/
