@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.ironsunnerf.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ChargeSpellMixin",
+    "EchoingStrikesDataMixin",
+    "SculkTentaclesSpellMixin",
+    "VoidTentacleMixin",
+    "RecallSpellMixin",
+    "PocketDimensionSpellMixin",
+    "FrostStepSpellMixin",
+    "OakskinEffectMixin",
+    "OakskinSpellMixin",
+    "FortifySpellMixin",
+    "HasteSpellMixin",
+    "HastenedEffectMixin",
+    "EvasionEffectMixin",
+    "AbstractMagicProjectileMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

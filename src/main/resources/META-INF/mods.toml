@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "Iron's Spells Unnerf (1.20.1)"
+logoFile = "irons_unnerf.png"
+logoBlur = false
+description = '''
+Iron's Spells 'n Spellbooks 1.20.1 のナーフを項目ごとに取り消すアドオン。
+各項目はコンフィグ(serverconfig/irons_unnerf-server.toml)のbooleanで切り替えできます。設定はサーバーが基準です。
+'''
+
+[[dependencies.${mod_id}]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "irons_spellbooks"
+mandatory = true
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
