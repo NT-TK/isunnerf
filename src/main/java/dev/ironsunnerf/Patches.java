@@ -74,6 +74,8 @@ public final class Patches {
             t("fortify", "mana_cost_per_level", "Fortify: Lvごとのマナ 10 → 5", new IntField("manaCostPerLevel", 5)),
             t("fortify", "cast_time", "Fortify: 詠唱時間 60tick(3秒) → 40tick(2秒)", new IntField("castTime", 40)),
             t("fortify", "base_mana_cost", "Fortify: 基礎マナ 80 → 40", new IntField("baseManaCost", 40)),
+            // 3.6.0 で 16 → 8。定数として本体に埋め込まれているため、Mixinで各使用箇所を書き換える
+            t("fortify", "radius", "Fortify: 効果範囲 8 → 16ブロック(3.6.0の弱体化)"),
 
             // ---- Acid Orb (Acid Spit) 3.14.2 ----
             t("acid_orb", "max_level", "Acid Orb: 最大Lv 8 → 10", new MaxLevel(10)),

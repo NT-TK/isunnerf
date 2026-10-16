@@ -39,3 +39,13 @@ tasks.withType(ProcessResources).configureEach {
     inputs.properties props
     filesMatching('META-INF/neoforge.mods.toml') { expand props }
 }
+
+// libs/ に Iron's Spells のjarがない場合は、大量のコンパイルエラーの代わりに分かりやすいメッセージで止める
+tasks.named('compileJava') {
+    doFirst {
+        if (fileTree(dir: 'libs', include: '*irons_spellbooks*.jar').isEmpty()) {
+            throw new GradleException("libs/ に Iron's Spells 'n Spellbooks のjar(irons_spellbooks-*.jar)がありません。" +
+                    " mods フォルダから libs/ にコピーしてください(依存MODのjarも一緒に)。")
+        }
+    }
+}

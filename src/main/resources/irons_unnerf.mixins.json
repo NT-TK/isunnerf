@@ -11,6 +11,7 @@
     "FrostStepSpellMixin",
     "OakskinEffectMixin",
     "OakskinSpellMixin",
+    "FortifySpellMixin",
     "HasteSpellMixin",
     "HastenedEffectMixin",
     "EvasionEffectMixin",
